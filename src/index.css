@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    /* Light mode colors */
+    --primary-bg-color-light: #ffffff;
+    --secondary-bg-color-light: #f0f0f0;
+    --primary-text-color-light: #1b1b1b;
+    --secondary-text-color-light: #999999;
+    --accent-color-light: #fdc10d;
+    --border-color-light: #e0e0e0;
+    --alpha-color-light: rgba(0, 0, 0, 0.5);
+    --alpha-color-light-hover: rgba(0, 0, 0, 0.2);
+
+    /* Dark mode colors */
+    --primary-bg-color-dark: #0d0d0d;
+    --secondary-bg-color-dark: #f0f0f0;
+    --primary-text-color-dark: #d5d5d5;
+    --secondary-text-color-dark: #aaaaaa;
+    --accent-color-dark: #fdc10d;
+    --border-color-dark: #444444;
+    --alpha-color-dark: rgba(255, 255, 255, 0.5);
+    --alpha-color-dark-hover: rgba(255, 255, 255, 0.2);
+
+}
+
+/* Default to dark mode */
+:root {
+    --primary-bg-color: var(--primary-bg-color-dark);
+    --secondary-bg-color: var(--secondary-bg-color-dark);
+    --primary-text-color: var(--primary-text-color-dark);
+    --secondary-text-color: var(--secondary-text-color-dark);
+    --accent-color: var(--accent-color-dark);
+    --border-color: var(--border-color-dark);
+    --alpha-color: var(--alpha-color-dark);
+    --alpha-color-hover: var(--alpha-color-dark-hover);
+}
+
+/* Light mode */
+body.light-mode {
+   --primary-bg-color: var(--primary-bg-color-light);
+    --secondary-bg-color: var(--secondary-bg-color-light);
+    --primary-text-color: var(--primary-text-color-light);
+    --secondary-text-color: var(--secondary-text-color-light);
+    --accent-color: var(--accent-color-light);
+    --border-color: var(--border-color-light);
+    --alpha-color: var(--alpha-color-light);
+    --alpha-color-hover: var(--alpha-color-light-hover);
+}
+* {
+    -webkit-tap-highlight-color: transparent; /* Safari, UC Browser, iOS Safari */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Older versions of Chrome, UC Browser */
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0); /* Firefox */
+    tap-highlight-color: rgba(0, 0, 0, 0); /* Newer versions of Chrome and some browsers */
+}
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: 'Nunito', sans-serif;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+}
