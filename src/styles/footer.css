@@ -3,9 +3,9 @@ footer{
 }
 footer img {
     mix-blend-mode: color-burn;
-    height: 100px;
+    height: 150px;
     width: auto;
-    margin-bottom: -135px;
+    margin-bottom: -150px;
 }
 .footer{
     margin-top: 100px;

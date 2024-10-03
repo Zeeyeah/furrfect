@@ -69,7 +69,7 @@ const Discover = () => {
   const gridRef = useRef<HTMLDivElement | null>(null);
 
   const fetchCats = async () => {
-      axios.get('https://api.thecatapi.com/v1/images/search?limit=9&has_breeds=1&api_key=' + import.meta.env.VITE_APP_CAT_API_KEY)
+      axios.get('https://api.thecatapi.com/v1/images/search?limit=11&has_breeds=1&api_key=' + import.meta.env.VITE_APP_CAT_API_KEY)
       .then(response => {
         setCats([...cats, ...response.data])
         setFilteredCats([...cats, ...response.data])
