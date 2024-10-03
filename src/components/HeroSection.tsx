@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react'
+import React, {useLayoutEffect } from 'react'
 import '../styles/hero-section.css'
 import gsap from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

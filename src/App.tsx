@@ -12,7 +12,7 @@ function App() {
 
 
   useEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll({})
+     new LocomotiveScroll({})
   }, []);
 
      return (
